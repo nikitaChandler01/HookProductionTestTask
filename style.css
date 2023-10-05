@@ -100,10 +100,11 @@ body::after {
   font-weight: 500;
   font-size: 18px;
 }
-
+.content__description {
+  margin-bottom: 48px;
+}
 .content__description>p {
   font-weight: 400;
-  margin-bottom: 48px;
 }
 
 .content__about {
@@ -132,11 +133,11 @@ body::after {
 }
 
 .entrance {
+  font-size: 32px;
+  margin-bottom: 16px;
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
 }
-
-
 
 .form-group__advanced {
   display: flex;
@@ -147,7 +148,10 @@ body::after {
 .form-group {
   margin-bottom: 32px;
 }
-
+.form-group > input {
+  height: 60px;
+  border-radius: 14px;
+}
 .form-group__checkbox {
   margin-right: 10px;
 }
