@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" media="screen" href="../../css/autorization/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="logo">
+        <div class="logo__square">
+          <span>ИЗ</span>
+        </div>
+        <span class="logo__full-name">Институт</span>
+      </div>
+    </header>
+    <main class="content content--end">
+      <div class="content__entrance">
+        <div class="content__description">
+          <h1 class="entrance">Вход</h1>
+          <p class="account-registration">Нет аккаунта? <a href="../registration/index.html" class="registration-suggest gold-color">Регистрация</a></p>
+        </div>
+        <div class="form-container">
+          <form data-form="sign-in">
+            <div class="form-group">
+              <label for="sign-in-email">Email</label>
+              <input 
+              id="sign-in-email" 
+              placeholder="Email" 
+              type="email" 
+              class="form-control" 
+              name="email"
+              value="">
+            </div>
+            <div class="form-group">
+              <label for="sign-in-password">Пароль</label>
+              <input 
+              id="sign-in-password" 
+              placeholder="Пароль" 
+              type="password" 
+              class="form-control" 
+              name="password"
+              value="">
+            </div>
+            <div class="form-group">
+              <div class="form-group__advanced">
+                <div class="form-group__checkbox">
+                  <input type="checkbox" id="checkbox" name="checkbox"> Запомнить меня
+                </div>
+                <a href="#" class="form-group__link">Забыли пароль?</a>
+              </div>
+            </div>
+            <div class="form-group">
+              <button 
+              type="submit" 
+              class="btn-custom" 
+              value="Submit">Войти</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+
+</html>
