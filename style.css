@@ -2,10 +2,12 @@
   font-family: 'Poppins', sans-serif;
   src: url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
 }
+
 @font-face {
   font-family: 'Inter', sans-serif;
   src: url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 }
+
 :root {
   --green-font: #083A31;
   --black-font: #364670;
@@ -21,27 +23,27 @@
 body {
   margin: 0 auto;
   background-color: #694bff05;
-  overflow: hidden;
 }
 
 body::after {
+  position: fixed;
+  top: -160px;
+  left: 600px;
   content: "";
-  position: absolute;
+  z-index: -1;
   width: 1246px;
   height: 1246px;
   background-color: white;
-  z-index: -1;
-  top: -160px;
-  left: 600px;
   border-radius: 50%;
 }
 
 .container {
-  max-width: 1440px;
   padding: 56px 160px 0px 56px;
+  max-width: 1440px;
 }
 
 .header {
+  padding: 8px 0;
   width: 100%;
 }
 
@@ -52,15 +54,16 @@ body::after {
 }
 
 .logo__square {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin-right: 16px;
   width: 48px;
   height: 48px;
   background-color: var(--green-font);
   border-radius: 14px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 16px;
-  padding: 0;
+
 }
 
 .logo__square>span {
@@ -69,8 +72,10 @@ body::after {
   left: 1px;
   color: white;
   font-family: 'Poppins', sans-serif;
-  font-size: 16px;
-  font-weight: 700;
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 24.7px;
+  letter-spacing: 1px;
 }
 
 .logo__full-name {
@@ -81,9 +86,9 @@ body::after {
 }
 
 .content {
-  font-family: 'Inter', sans-serif;
   display: flex;
   justify-content: space-between;
+  font-family: 'Inter', sans-serif;
 }
 
 .content--end {
@@ -92,26 +97,30 @@ body::after {
 }
 
 .content__entrance {
-  width: 484px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 484px;
   color: var(--black-font);
   font-weight: 500;
   font-size: 18px;
 }
+
+.account-registration {
+  margin: 0;
+}
+
 .content__description {
   margin-bottom: 48px;
 }
+
 .content__description>p {
   font-weight: 400;
 }
 
 .content__about {
   width: 490px;
-  position: relative;
-  top: 200px;
-  height: 266px;
+  padding-top: 208px;
 }
 
 .content__about-title {
@@ -127,6 +136,7 @@ body::after {
 .content__about-text {
   font-size: 20px;
   line-height: 1.3em;
+  letter-spacing: 0.4px;
   font-weight: 400;
   color: #92929d;
   letter-spacing: 2%;
@@ -142,22 +152,35 @@ body::after {
 .form-group__advanced {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 42px;
+  margin-bottom: 45px;
 }
 
 .form-group {
   margin-bottom: 32px;
 }
-.form-group > input {
+
+.form-group>input {
   height: 60px;
   border-radius: 14px;
+  border-color: #EAEAEA;
 }
+
 .form-group__checkbox {
+  display: flex;
+  align-items: self-start;
   margin-right: 10px;
+  height: 22px;
 }
 
 .form-group__checkbox--registration {
+  height: 20px;
   font-size: 14px;
+  line-height: 17px;
+}
+
+.form-group__checkbox--registration>span {
+  position: relative;
+  top: 4px;
 }
 
 .form-group__link {
@@ -178,8 +201,7 @@ label {
 
 .btn-custom {
   width: 100%;
-  height: 64px;
-  padding: 15px 40px 15px 40px;
+  height: 54px;
   border: 0px;
   border-radius: 14px;
   font-weight: 500;
@@ -187,13 +209,18 @@ label {
   color: white;
   background-color: var(--green-font);
 }
-
 #checkbox {
   position: relative;
-  top: 1px;
+  top: 3px;
   margin-right: 12px;
+  height: 20px;
+  width: 20px;
 }
-
+.checkbox>span {
+  display: inline-block;
+  position: relative;
+  top: -2px;
+}
 .btn:hover {
   background-color: var(--green-font);
 }

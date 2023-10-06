@@ -28,9 +28,9 @@
         <div class="form-container">
           <form data-form="sign-up">
             <div class="form-group">
-              <label for="sign-in-email">Имя</label>
+              <label for="sign-in-name">Имя</label>
               <input 
-              id="sign-in-email" 
+              id="sign-in-name" 
               placeholder="Ваше имя" 
               type="name" 
               class="form-control" 
@@ -38,9 +38,9 @@
               value="">
             </div>
             <div class="form-group">
-              <label for="sign-in-email">Номер телефона<span style="color: red">*</span></label>
+              <label for="sign-in-number">Номер телефона<span style="color: red">*</span></label>
               <input 
-              id="sign-in-email" 
+              id="sign-in-number" 
               placeholder="Номер телефона" 
               type="phone-number" 
               class="form-control" 
@@ -60,7 +60,9 @@
             <div class="form-group">
               <div class="form-group__advanced">
                 <div class="form-group__checkbox form-group__checkbox--registration">
-                  <input type="checkbox" id="checkbox" name="checkbox"><span>Я прочитал и соглашаюсь c </span><a href="../account/index.html" class="form-group__link form-group__link--underlined gold-color">пользовательским соглашением</a>
+                  <label class="checkbox">
+                  <input type="checkbox" id="checkbox" name="checkbox-license"><span>Я прочитал и соглашаюсь c <a href="../account/index.html" class="form-group__link form-group__link--underlined gold-color">пользовательским соглашением</a></span>
+                  </label>
                 </div>
               </div>
             </div>
